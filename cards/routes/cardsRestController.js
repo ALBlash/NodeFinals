@@ -39,6 +39,7 @@ router.get("/my-cards", auth, async (req, res) => {
     }
 });
 
+// works perfect - W.
 router.get("/:id", async (req, res) => {
     try {
         const { id } = req.params;
@@ -67,6 +68,7 @@ router.post("/", async (req, res) => {
     }
 });
 
+// it is indeed a valid - W.
 router.put("/:id", async (req, res) => {
     try {
         let card = req.body;
@@ -87,7 +89,7 @@ router.put("/:id", async (req, res) => {
 router.patch("/:id", async (req, res) => {
     try {
         const cardId = req.params.id;
-        const userId = req.body.userId;
+        const userId = req.body._id;
         const card = await likeingCard(cardId, userId);
         return res.send(card);
     } catch (error) {
@@ -95,6 +97,8 @@ router.patch("/:id", async (req, res) => {
     }
 });
 
+// one big - W.
+// only problem the app crash if u try to re-delete the card
 router.delete("/:id", async (req, res) => {
     try {
         const { id } = req.params;

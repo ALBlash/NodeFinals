@@ -5,9 +5,10 @@
 
 const chalk = require("chalk");
 
-const handleError = (res, status, message = "") => {
+const handleError = (res, status, message = "", next) => {
     console.log(chalk.redBright(message));
     return res.status(status).send(message);
+    next()
 };
 
 const handleBadRequest = async (validator, error) => {

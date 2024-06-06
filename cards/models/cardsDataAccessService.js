@@ -27,7 +27,7 @@ const getMyCards = async userId => {
             const cards = await Card.find({ user_id: userId });
 
             if (!cards || cards.length === 0) {
-                handleError(req, 404, "no cards were found")
+                throw new Error("No personal cards found")
             }
 
             return Promise.resolve(cards);
