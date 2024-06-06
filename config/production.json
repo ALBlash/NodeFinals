@@ -1,0 +1,9 @@
+{
+    "NODE_ENV": "production",
+    "PORT": 9191,
+    "TOKEN_GENERATOR": "jwt",
+    "DB_NAME": "alblashnikov",
+    "DB_PASSWORD": "Albm1242",
+    "LOGGER": "morgan",
+    "DB": "mongodb+srv://alblashnikov:Albm1242@hackeru.lkgxaar.mongodb.net/"
+}

@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "name": {
+                "first": "admin",
+                "middle": "",
+                "last": "admin"
+            },
+            "phone": "051234567",
+            "email": "admin@email.com",
+            "password": "Aa123456!",
+            "image": {
+                "url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+                "alt": "User Profile Picture"
+            },
+            "address": {
+                "state": "",
+                "city": "Jerusalem",
+                "country": "Israel",
+                "houseNumber": 42,
+                "street": "Rothschild",
+                "zip": 1234567
+            },
+            "isBusiness": true,
+            "isAdmin": true
+        }
+    ]
+}
